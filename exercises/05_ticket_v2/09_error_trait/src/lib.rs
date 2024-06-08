@@ -3,8 +3,6 @@
 //  The docs for the `std::fmt` module are a good place to start and look for examples:
 //  https://doc.rust-lang.org/std/fmt/index.html#write
 
-use std::fmt::write;
-
 #[derive(Debug)]
 enum TicketNewError {
     TitleError(String),
