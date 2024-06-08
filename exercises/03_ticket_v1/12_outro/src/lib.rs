@@ -22,19 +22,19 @@ fn validate_product_name(product_name: &String) {
     if product_name.is_empty() {
         panic!("Product name should not be empty");
     }
-    if (product_name.len() > 300) {
+    if product_name.len() > 300 {
         panic!("Product name cannot be longer than 300 bytes");
     }
 }
 
 fn validate_quantity(quantity: u32) {
-    if (quantity < 1) {
+    if quantity < 1 {
         panic!("Quantity should be greater than zero");
     }
 }
 
 fn validate_unit_price(unit_price: u32) {
-    if (unit_price < 1) {
+    if unit_price < 1 {
         panic!("Unit price should be greater than zero");
     }
 }
